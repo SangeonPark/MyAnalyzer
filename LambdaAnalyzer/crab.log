@@ -1,0 +1,484 @@
+DEBUG 2015-06-10 19:12:59,230: 	 Executing command: 'submit'
+DEBUG 2015-06-10 19:12:59,231: 	 Could not find CRAB cache file /afs/cern.ch/user/s/saepark/.crab3; creating a new one.
+DEBUG 2015-06-10 19:12:59,243: 	 Checking credentials
+DEBUG 2015-06-10 19:12:59,244: 	 Found proxy file /tmp/x509up_u81540
+DEBUG 2015-06-10 19:12:59,244: 	 Getting proxy life time left
+DEBUG 2015-06-10 19:12:59,847: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -timeleft
+ output : 599718
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-10 19:13:00,253: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -actimeleft
+ output : 599716
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-10 19:13:00,253: 	 Proxy valid for 166:35:18 hours
+INFO 2015-06-10 19:13:00,253: 	 Will use CRAB configuration file crabConfig_Lambda_analysis.py
+DEBUG 2015-06-10 19:13:00,254: 	 Loading CRAB configuration file.
+ERROR 2015-06-10 19:13:02,508: 	 Invalid CRAB configuration: Parameter Site.storageSite requires a value of type <type 'str'> (while a value of type <type 'list'> was given).
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2015-06-10 19:13:02,508: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/bin/crab", line 136, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/bin/crab", line 122, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/lib/python2.6/site-packages/CRABClient/Commands/submit.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args = True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/lib/python2.6/site-packages/CRABClient/Commands/SubCommand.py", line 294, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/lib/python2.6/site-packages/CRABClient/Commands/SubCommand.py", line 88, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration: Parameter Site.storageSite requires a value of type <type 'str'> (while a value of type <type 'list'> was given).
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2015-06-10 20:17:45,785: 	 Executing command: 'submit'
+DEBUG 2015-06-10 20:17:45,785: 	 Found CRAB cache file /afs/cern.ch/user/s/saepark/.crab3
+DEBUG 2015-06-10 20:17:45,797: 	 Checking credentials
+DEBUG 2015-06-10 20:17:45,797: 	 Found proxy file /tmp/x509up_u81540
+DEBUG 2015-06-10 20:17:45,797: 	 Getting proxy life time left
+DEBUG 2015-06-10 20:17:46,301: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -timeleft
+ output : 595831
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-10 20:17:46,706: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -actimeleft
+ output : 595830
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-10 20:17:46,706: 	 Proxy valid for 165:30:31 hours
+INFO 2015-06-10 20:17:46,706: 	 Will use CRAB configuration file crabConfig_Lambda_analysis.py
+DEBUG 2015-06-10 20:17:46,706: 	 Loading CRAB configuration file.
+DEBUG 2015-06-10 20:17:50,362: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2015-06-10 20:17:50,362: 	 Working area '/afs/cern.ch/user/s/saepark/MyAnalyzer/CMSSW_5_3_20/src/Lambda/LambdaAnalyzer/crab_projects/crab_JUN2015_Lambda_analysis' already exists 
+Please change the requestName in the config file
+ERROR 2015-06-10 20:17:50,362: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/bin/crab", line 136, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/bin/crab", line 122, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/lib/python2.6/site-packages/CRABClient/Commands/submit.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args = True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/lib/python2.6/site-packages/CRABClient/Commands/SubCommand.py", line 298, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/lib/python2.6/site-packages/CRABClient/ClientUtilities.py", line 360, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/s/saepark/MyAnalyzer/CMSSW_5_3_20/src/Lambda/LambdaAnalyzer/crab_projects/crab_JUN2015_Lambda_analysis' already exists 
+Please change the requestName in the config file
+DEBUG 2015-06-12 00:16:00,136: 	 Executing command: 'submit'
+DEBUG 2015-06-12 00:16:00,137: 	 Found CRAB cache file /afs/cern.ch/user/s/saepark/.crab3
+DEBUG 2015-06-12 00:16:00,175: 	 Checking credentials
+DEBUG 2015-06-12 00:16:00,175: 	 Found proxy file /tmp/x509up_u81540
+DEBUG 2015-06-12 00:16:00,175: 	 Getting proxy life time left
+DEBUG 2015-06-12 00:16:00,687: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -timeleft
+ output : 604691
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-12 00:16:01,293: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -actimeleft
+ output : 604690
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-12 00:16:01,293: 	 Proxy valid for 167:58:11 hours
+INFO 2015-06-12 00:16:01,293: 	 Will use CRAB configuration file crabConfig_Lambda_analysis.py
+DEBUG 2015-06-12 00:16:01,293: 	 Loading CRAB configuration file.
+DEBUG 2015-06-12 00:16:03,320: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2015-06-12 00:16:03,341: 	 Working area '/afs/cern.ch/user/s/saepark/MyAnalyzer/CMSSW_5_3_20/src/Lambda/LambdaAnalyzer/crab_projects/crab_JUN2015_Lambda_analysis' already exists 
+Please change the requestName in the config file
+ERROR 2015-06-12 00:16:03,341: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/bin/crab", line 136, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/bin/crab", line 122, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/lib/python2.6/site-packages/CRABClient/Commands/submit.py", line 40, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args = True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/lib/python2.6/site-packages/CRABClient/Commands/SubCommand.py", line 298, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/lib/python2.6/site-packages/CRABClient/ClientUtilities.py", line 360, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/s/saepark/MyAnalyzer/CMSSW_5_3_20/src/Lambda/LambdaAnalyzer/crab_projects/crab_JUN2015_Lambda_analysis' already exists 
+Please change the requestName in the config file
+DEBUG 2015-06-15 21:13:43,478: 	 Executing command: 'resubmit'
+DEBUG 2015-06-15 21:13:43,478: 	 Found CRAB cache file /afs/cern.ch/user/s/saepark/.crab3
+ERROR 2015-06-15 21:13:43,479: 	 Error: crabConfig_Lambda_analysis.py is not a valid CRAB project directory.
+ERROR 2015-06-15 21:13:43,479: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/bin/crab", line 136, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/bin/crab", line 122, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/lib/python2.6/site-packages/CRABClient/Commands/resubmit.py", line 26, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/lib/python2.6/site-packages/CRABClient/Commands/SubCommand.py", line 253, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/lib/python2.6/site-packages/CRABClient/Commands/resubmit.py", line 168, in validateOptions
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/lib/python2.6/site-packages/CRABClient/Commands/SubCommand.py", line 563, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crabConfig_Lambda_analysis.py is not a valid CRAB project directory.
+DEBUG 2015-06-15 21:14:52,180: 	 Executing command: 'status'
+DEBUG 2015-06-15 21:14:52,181: 	 Found CRAB cache file /afs/cern.ch/user/s/saepark/.crab3
+ERROR 2015-06-15 21:14:52,181: 	 Error: crabConfig_Lambda_analysis.py is not a valid CRAB project directory.
+ERROR 2015-06-15 21:14:52,181: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/bin/crab", line 136, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/bin/crab", line 122, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/lib/python2.6/site-packages/CRABClient/Commands/SubCommand.py", line 253, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/lib/python2.6/site-packages/CRABClient/Commands/status.py", line 731, in validateOptions
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc481/cms/crabclient/3.3.1506/lib/python2.6/site-packages/CRABClient/Commands/SubCommand.py", line 563, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crabConfig_Lambda_analysis.py is not a valid CRAB project directory.
+DEBUG 2015-06-19 00:52:28,923: 	 Executing command: 'checkwrite'
+DEBUG 2015-06-19 00:52:28,924: 	 Found CRAB cache file /afs/cern.ch/user/s/saepark/.crab3
+DEBUG 2015-06-19 00:52:28,957: 	 Checking credentials
+DEBUG 2015-06-19 00:52:28,957: 	 Found proxy file /tmp/x509up_u81540
+DEBUG 2015-06-19 00:52:28,958: 	 Getting proxy life time left
+DEBUG 2015-06-19 00:52:29,463: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -timeleft
+ output : 600683
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-19 00:52:29,968: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -actimeleft
+ output : 600683
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-19 00:52:29,968: 	 Proxy valid for 166:51:23 hours
+DEBUG 2015-06-19 00:52:30,077: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=saepark/CN=773439/CN=Sang Eon Park
+
+ error: WARNING: can't open config file: /build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/tmp/BUILDROOT/779a792f862039a4ebba572299ebbb36/build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/slc6_amd64_gcc481/external/openssl/1.0.1m-comp/ssl/openssl.cnf
+
+ retcode : 0
+DEBUG 2015-06-19 00:52:30,077: 	 Checking credentials
+DEBUG 2015-06-19 00:52:30,077: 	 Found proxy file /tmp/x509up_u81540
+DEBUG 2015-06-19 00:52:30,078: 	 Getting proxy life time left
+DEBUG 2015-06-19 00:52:30,489: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -timeleft
+ output : 600682
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-19 00:52:30,993: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -actimeleft
+ output : 600682
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-19 00:52:30,993: 	 Proxy valid for 166:51:22 hours
+DEBUG 2015-06-19 00:52:31,499: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u81540 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-19 00:52:31,500: 	 Command use: checkwrite
+DEBUG 2015-06-19 00:52:31,500: 	 Options use: ['--site=T2_US_MIT']
+DEBUG 2015-06-19 00:52:31,500: 	 Instance is None
+DEBUG 2015-06-19 00:52:31,500: 	 Server base url is None
+DEBUG 2015-06-19 00:52:31,584: 	 Service initialised ({'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'key': '/tmp/x509up_u81540', 'maxcachereuse': 24.0, 'cachepath': '/tmp/saepark/.wmcore_cache_unZUJt/cmsweb.cern.ch', 'inputdata': {}, 'cert': '/tmp/x509up_u81540', 'timeout': 300, 'service_name': 'PhEDEx', 'requests': {'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'key': '/tmp/x509up_u81540', 'req_cache_path': '/tmp/saepark/.wmcore_cache_unZUJt/cmsweb.cern.ch/.cache', 'cachepath': '/tmp/saepark/.wmcore_cache_unZUJt/cmsweb.cern.ch', 'host': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'cacheduration': 0, 'cert': '/tmp/x509up_u81540', 'accept_type': 'text/html', 'timeout': 300, 'deleteCacheOnExit': <WMCore.Services.Requests.TempDirectory instance at 0x21bd368>, 'endpoint_components': ParseResult(scheme='https', netloc='cmsweb.cern.ch', path='/phedex/datasvc/json/prod/', params='', query='', fragment=''), 'logger': <logging.Logger instance at 0x219da70>, 'content_type': 'application/x-www-form-urlencoded', 'conn': <httplib2.Http object at 0x21bf190>}, 'logger': <logging.Logger instance at 0x219da70>, 'cacheduration': 0, 'method': None}):
+	 host: cmsweb.cern.ch, basepath: https://cmsweb.cern.ch/phedex/datasvc/json/prod/ (text/html)
+	 cache: /tmp/saepark/.wmcore_cache_unZUJt/cmsweb.cern.ch (duration 0 hours, max reuse 24.0 hours)
+INFO 2015-06-19 00:52:31,584: 	 Will check write permission in the default location /store/user/<username>
+INFO 2015-06-19 00:52:31,585: 	 Retrieving DN from proxy...
+INFO 2015-06-19 00:52:32,828: 	 DN is: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=saepark/CN=773439/CN=Sang Eon Park
+INFO 2015-06-19 00:52:32,829: 	 Retrieving username from SiteDB...
+INFO 2015-06-19 00:52:34,844: 	 Username is: saepark
+INFO 2015-06-19 00:52:34,844: 	 Validating LFN /store/user/saepark...
+INFO 2015-06-19 00:52:34,844: 	 LFN /store/user/saepark is valid.
+INFO 2015-06-19 00:52:34,870: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2015-06-19 00:52:34,870: 	 Will check write permission in /store/user/saepark on site T2_US_MIT
+DEBUG 2015-06-19 00:52:34,874: 	 getData: 
+	url: lfn2pfn
+	data: {'node': ['T2_US_MIT'], 'custodial': 'n', 'lfn': ['/store/user/saepark/crab3checkwrite.0.tmp'], 'protocol': 'srmv2'}
+INFO 2015-06-19 00:52:36,146: 	 Attempting to copy (dummy) file crab3checkwrite.0.tmp to /store/user/saepark on site T2_US_MIT
+INFO 2015-06-19 00:52:36,153: 	 Executing command: env -i X509_USER_PROXY=/tmp/x509up_u81540 gfal-copy -v -t 180 file:///afs/cern.ch/user/s/saepark/MyAnalyzer/CMSSW_5_3_20/src/Lambda/LambdaAnalyzer/crab3checkwrite.0.tmp 'srm://se01.cmsaf.mit.edu:8443/srm/v2/server?SFN=/mnt/hadoop/cms/store/user/saepark/crab3checkwrite.0.tmp'
+INFO 2015-06-19 00:52:36,153: 	 Please wait...
+INFO 2015-06-19 00:52:40,777: 	 Failed running copy command
+INFO 2015-06-19 00:52:40,777: 	   Stdout:
+    Copying 85 bytes file:///afs/cern.ch/user/s/saepark/MyAnalyzer/CMSSW_5_3_20/src/Lambda/LambdaAnalyzer/crab3checkwrite.0.tmp => srm://se01.cmsaf.mit.edu:8443/srm/v2/server?SFN=/mnt/hadoop/cms/store/user/saepark/crab3checkwrite.0.tmp
+    
+INFO 2015-06-19 00:52:40,777: 	   Stderr:
+    gfal-copy error: 13 (Permission denied) - DESTINATION SRM_PUT_TURL srm-ifce err: Permission denied, err: [SE][PrepareToPut][SRM_AUTHORIZATION_FAILURE] httpg://se01.cmsaf.mit.edu:8443/srm/v2/server: not mapped./DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=saepark/CN=773439/CN=Sang Eon Park
+    
+    
+INFO 2015-06-19 00:52:40,777: 	 Error: Unable to write in /store/user/saepark on site T2_US_MIT
+       You may want to contact the site administrators sending them the 'crab checkwrite' output as printed above.
+INFO 2015-06-19 00:52:40,778: 	 Note: You cannot write to a site if you did not ask permission.
+DEBUG 2015-06-19 08:04:49,774: 	 Executing command: 'checkwrite'
+DEBUG 2015-06-19 08:04:49,777: 	 Found CRAB cache file /afs/cern.ch/user/s/saepark/.crab3
+DEBUG 2015-06-19 08:04:49,819: 	 Checking credentials
+DEBUG 2015-06-19 08:04:49,819: 	 Found proxy file /tmp/x509up_u81540
+DEBUG 2015-06-19 08:04:49,819: 	 Getting proxy life time left
+DEBUG 2015-06-19 08:04:50,743: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -timeleft
+ output : 604522
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-19 08:04:51,452: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -actimeleft
+ output : 604520
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-19 08:04:51,453: 	 Proxy valid for 167:55:22 hours
+DEBUG 2015-06-19 08:04:51,768: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=saepark/CN=773439/CN=Sang Eon Park
+
+ error: WARNING: can't open config file: /build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/tmp/BUILDROOT/779a792f862039a4ebba572299ebbb36/build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/slc6_amd64_gcc481/external/openssl/1.0.1m-comp/ssl/openssl.cnf
+
+ retcode : 0
+DEBUG 2015-06-19 08:04:51,769: 	 Checking credentials
+DEBUG 2015-06-19 08:04:51,769: 	 Found proxy file /tmp/x509up_u81540
+DEBUG 2015-06-19 08:04:51,770: 	 Getting proxy life time left
+DEBUG 2015-06-19 08:04:52,584: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -timeleft
+ output : 604520
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-19 08:04:53,827: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -actimeleft
+ output : 604518
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-19 08:04:53,827: 	 Proxy valid for 167:55:20 hours
+DEBUG 2015-06-19 08:04:54,642: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u81540 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-19 08:04:54,643: 	 Command use: checkwrite
+DEBUG 2015-06-19 08:04:54,643: 	 Options use: ['--site=T2_US_MIT']
+DEBUG 2015-06-19 08:04:54,643: 	 Instance is None
+DEBUG 2015-06-19 08:04:54,643: 	 Server base url is None
+DEBUG 2015-06-19 08:04:55,889: 	 Service initialised ({'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'key': '/tmp/x509up_u81540', 'maxcachereuse': 24.0, 'cachepath': '/tmp/saepark/.wmcore_cache_fHtL9h/cmsweb.cern.ch', 'inputdata': {}, 'cert': '/tmp/x509up_u81540', 'timeout': 300, 'service_name': 'PhEDEx', 'requests': {'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'key': '/tmp/x509up_u81540', 'req_cache_path': '/tmp/saepark/.wmcore_cache_fHtL9h/cmsweb.cern.ch/.cache', 'cachepath': '/tmp/saepark/.wmcore_cache_fHtL9h/cmsweb.cern.ch', 'host': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'cacheduration': 0, 'cert': '/tmp/x509up_u81540', 'accept_type': 'text/html', 'timeout': 300, 'deleteCacheOnExit': <WMCore.Services.Requests.TempDirectory instance at 0x1ac1368>, 'endpoint_components': ParseResult(scheme='https', netloc='cmsweb.cern.ch', path='/phedex/datasvc/json/prod/', params='', query='', fragment=''), 'logger': <logging.Logger instance at 0x1aa1a70>, 'content_type': 'application/x-www-form-urlencoded', 'conn': <httplib2.Http object at 0x1ac3190>}, 'logger': <logging.Logger instance at 0x1aa1a70>, 'cacheduration': 0, 'method': None}):
+	 host: cmsweb.cern.ch, basepath: https://cmsweb.cern.ch/phedex/datasvc/json/prod/ (text/html)
+	 cache: /tmp/saepark/.wmcore_cache_fHtL9h/cmsweb.cern.ch (duration 0 hours, max reuse 24.0 hours)
+INFO 2015-06-19 08:04:55,889: 	 Will check write permission in the default location /store/user/<username>
+INFO 2015-06-19 08:04:55,889: 	 Retrieving DN from proxy...
+INFO 2015-06-19 08:04:58,266: 	 DN is: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=saepark/CN=773439/CN=Sang Eon Park
+INFO 2015-06-19 08:04:58,267: 	 Retrieving username from SiteDB...
+INFO 2015-06-19 08:05:03,795: 	 Username is: saepark
+INFO 2015-06-19 08:05:03,795: 	 Validating LFN /store/user/saepark...
+INFO 2015-06-19 08:05:03,795: 	 LFN /store/user/saepark is valid.
+INFO 2015-06-19 08:05:03,865: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2015-06-19 08:05:03,865: 	 Will check write permission in /store/user/saepark on site T2_US_MIT
+DEBUG 2015-06-19 08:05:03,878: 	 getData: 
+	url: lfn2pfn
+	data: {'node': ['T2_US_MIT'], 'custodial': 'n', 'lfn': ['/store/user/saepark/crab3checkwrite.0.tmp'], 'protocol': 'srmv2'}
+INFO 2015-06-19 08:05:06,854: 	 Attempting to copy (dummy) file crab3checkwrite.0.tmp to /store/user/saepark on site T2_US_MIT
+INFO 2015-06-19 08:05:06,876: 	 Executing command: env -i X509_USER_PROXY=/tmp/x509up_u81540 gfal-copy -v -t 180 file:///afs/cern.ch/user/s/saepark/MyAnalyzer/CMSSW_5_3_20/src/Lambda/LambdaAnalyzer/crab3checkwrite.0.tmp 'srm://se01.cmsaf.mit.edu:8443/srm/v2/server?SFN=/mnt/hadoop/cms/store/user/saepark/crab3checkwrite.0.tmp'
+INFO 2015-06-19 08:05:06,876: 	 Please wait...
+INFO 2015-06-19 08:05:11,441: 	 Failed running copy command
+INFO 2015-06-19 08:05:11,441: 	   Stdout:
+    Copying 85 bytes file:///afs/cern.ch/user/s/saepark/MyAnalyzer/CMSSW_5_3_20/src/Lambda/LambdaAnalyzer/crab3checkwrite.0.tmp => srm://se01.cmsaf.mit.edu:8443/srm/v2/server?SFN=/mnt/hadoop/cms/store/user/saepark/crab3checkwrite.0.tmp
+    
+INFO 2015-06-19 08:05:11,441: 	   Stderr:
+    gfal-copy error: 13 (Permission denied) - DESTINATION SRM_PUT_TURL srm-ifce err: Permission denied, err: [SE][PrepareToPut][SRM_AUTHORIZATION_FAILURE] httpg://se01.cmsaf.mit.edu:8443/srm/v2/server: not mapped./DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=saepark/CN=773439/CN=Sang Eon Park
+    
+    
+INFO 2015-06-19 08:05:11,441: 	 Error: Unable to write in /store/user/saepark on site T2_US_MIT
+       You may want to contact the site administrators sending them the 'crab checkwrite' output as printed above.
+INFO 2015-06-19 08:05:11,581: 	 Note: You cannot write to a site if you did not ask permission.
+DEBUG 2015-06-19 08:05:39,673: 	 Executing command: 'checkwrite'
+DEBUG 2015-06-19 08:05:39,674: 	 Found CRAB cache file /afs/cern.ch/user/s/saepark/.crab3
+DEBUG 2015-06-19 08:05:39,687: 	 Checking credentials
+DEBUG 2015-06-19 08:05:39,688: 	 Found proxy file /tmp/x509up_u81540
+DEBUG 2015-06-19 08:05:39,688: 	 Getting proxy life time left
+DEBUG 2015-06-19 08:05:40,609: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -timeleft
+ output : 604472
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-19 08:05:41,217: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -actimeleft
+ output : 604470
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-19 08:05:41,217: 	 Proxy valid for 167:54:32 hours
+DEBUG 2015-06-19 08:05:41,341: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=saepark/CN=773439/CN=Sang Eon Park
+
+ error: WARNING: can't open config file: /build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/tmp/BUILDROOT/779a792f862039a4ebba572299ebbb36/build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/slc6_amd64_gcc481/external/openssl/1.0.1m-comp/ssl/openssl.cnf
+
+ retcode : 0
+DEBUG 2015-06-19 08:05:41,341: 	 Checking credentials
+DEBUG 2015-06-19 08:05:41,341: 	 Found proxy file /tmp/x509up_u81540
+DEBUG 2015-06-19 08:05:41,341: 	 Getting proxy life time left
+DEBUG 2015-06-19 08:05:42,059: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -timeleft
+ output : 604471
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-19 08:05:42,667: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -actimeleft
+ output : 604469
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-19 08:05:42,667: 	 Proxy valid for 167:54:31 hours
+DEBUG 2015-06-19 08:05:43,379: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u81540 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-19 08:05:43,379: 	 Command use: checkwrite
+DEBUG 2015-06-19 08:05:43,379: 	 Options use: ['--site=T2_US_Nebraska']
+DEBUG 2015-06-19 08:05:43,379: 	 Instance is None
+DEBUG 2015-06-19 08:05:43,380: 	 Server base url is None
+DEBUG 2015-06-19 08:05:43,385: 	 Service initialised ({'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'key': '/tmp/x509up_u81540', 'maxcachereuse': 24.0, 'cachepath': '/tmp/saepark/.wmcore_cache_SBEYOQ/cmsweb.cern.ch', 'inputdata': {}, 'cert': '/tmp/x509up_u81540', 'timeout': 300, 'service_name': 'PhEDEx', 'requests': {'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'key': '/tmp/x509up_u81540', 'req_cache_path': '/tmp/saepark/.wmcore_cache_SBEYOQ/cmsweb.cern.ch/.cache', 'cachepath': '/tmp/saepark/.wmcore_cache_SBEYOQ/cmsweb.cern.ch', 'host': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'cacheduration': 0, 'cert': '/tmp/x509up_u81540', 'accept_type': 'text/html', 'timeout': 300, 'deleteCacheOnExit': <WMCore.Services.Requests.TempDirectory instance at 0x109e368>, 'endpoint_components': ParseResult(scheme='https', netloc='cmsweb.cern.ch', path='/phedex/datasvc/json/prod/', params='', query='', fragment=''), 'logger': <logging.Logger instance at 0x107ea70>, 'content_type': 'application/x-www-form-urlencoded', 'conn': <httplib2.Http object at 0x10a01d0>}, 'logger': <logging.Logger instance at 0x107ea70>, 'cacheduration': 0, 'method': None}):
+	 host: cmsweb.cern.ch, basepath: https://cmsweb.cern.ch/phedex/datasvc/json/prod/ (text/html)
+	 cache: /tmp/saepark/.wmcore_cache_SBEYOQ/cmsweb.cern.ch (duration 0 hours, max reuse 24.0 hours)
+INFO 2015-06-19 08:05:43,385: 	 Will check write permission in the default location /store/user/<username>
+INFO 2015-06-19 08:05:43,385: 	 Retrieving DN from proxy...
+INFO 2015-06-19 08:05:45,434: 	 DN is: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=saepark/CN=773439/CN=Sang Eon Park
+INFO 2015-06-19 08:05:45,435: 	 Retrieving username from SiteDB...
+INFO 2015-06-19 08:05:48,441: 	 Username is: saepark
+INFO 2015-06-19 08:05:48,441: 	 Validating LFN /store/user/saepark...
+INFO 2015-06-19 08:05:48,441: 	 LFN /store/user/saepark is valid.
+INFO 2015-06-19 08:05:48,491: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2015-06-19 08:05:48,491: 	 Will check write permission in /store/user/saepark on site T2_US_Nebraska
+DEBUG 2015-06-19 08:05:48,503: 	 getData: 
+	url: lfn2pfn
+	data: {'node': ['T2_US_Nebraska'], 'custodial': 'n', 'lfn': ['/store/user/saepark/crab3checkwrite.0.tmp'], 'protocol': 'srmv2'}
+INFO 2015-06-19 08:05:51,944: 	 Attempting to copy (dummy) file crab3checkwrite.0.tmp to /store/user/saepark on site T2_US_Nebraska
+INFO 2015-06-19 08:05:51,959: 	 Executing command: env -i X509_USER_PROXY=/tmp/x509up_u81540 gfal-copy -v -t 180 file:///afs/cern.ch/user/s/saepark/MyAnalyzer/CMSSW_5_3_20/src/Lambda/LambdaAnalyzer/crab3checkwrite.0.tmp 'srm://dcache07.unl.edu:8443/srm/v2/server?SFN=/mnt/hadoop/user/uscms01/pnfs/unl.edu/data4/cms/store/user/saepark/crab3checkwrite.0.tmp'
+INFO 2015-06-19 08:05:51,959: 	 Please wait...
+INFO 2015-06-19 08:05:53,751: 	 Failed running copy command
+INFO 2015-06-19 08:05:53,751: 	   Stdout:
+    Copying 85 bytes file:///afs/cern.ch/user/s/saepark/MyAnalyzer/CMSSW_5_3_20/src/Lambda/LambdaAnalyzer/crab3checkwrite.0.tmp => srm://dcache07.unl.edu:8443/srm/v2/server?SFN=/mnt/hadoop/user/uscms01/pnfs/unl.edu/data4/cms/store/user/saepark/crab3checkwrite.0.tmp
+    
+INFO 2015-06-19 08:05:53,751: 	   Stderr:
+    gfal-copy error: 2 (No such file or directory) - DESTINATION SRM_PUT_TURL error on the turl request : [SE][PrepareToPut][SRM_INVALID_PATH] Dir structure does not exist.srm://dcache07.unl.edu:8443/srm/v2/server?SFN=/mnt/hadoop/user/uscms01/pnfs/unl.edu/data4/cms/store/user/saepark/crab3checkwrite.0.tmp 
+    
+INFO 2015-06-19 08:05:53,752: 	 Error copying file crab3checkwrite.0.tmp to /store/user/saepark on site T2_US_Nebraska; it may be that file already exists.
+INFO 2015-06-19 08:05:53,752: 	 Attempting to delete file srm://dcache07.unl.edu:8443/srm/v2/server?SFN=/mnt/hadoop/user/uscms01/pnfs/unl.edu/data4/cms/store/user/saepark/crab3checkwrite.0.tmp from site T2_US_Nebraska
+INFO 2015-06-19 08:05:53,752: 	 Executing command: env -i X509_USER_PROXY=/tmp/x509up_u81540 gfal-rm -v -t 180 'srm://dcache07.unl.edu:8443/srm/v2/server?SFN=/mnt/hadoop/user/uscms01/pnfs/unl.edu/data4/cms/store/user/saepark/crab3checkwrite.0.tmp'
+INFO 2015-06-19 08:05:53,752: 	 Please wait...
+INFO 2015-06-19 08:05:54,584: 	 Successfully deleted file srm://dcache07.unl.edu:8443/srm/v2/server?SFN=/mnt/hadoop/user/uscms01/pnfs/unl.edu/data4/cms/store/user/saepark/crab3checkwrite.0.tmp from site T2_US_Nebraska
+INFO 2015-06-19 08:05:54,585: 	 Attempting to copy (dummy) file crab3checkwrite.0.tmp to /store/user/saepark on site T2_US_Nebraska
+INFO 2015-06-19 08:05:54,590: 	 Executing command: env -i X509_USER_PROXY=/tmp/x509up_u81540 gfal-copy -v -t 180 file:///afs/cern.ch/user/s/saepark/MyAnalyzer/CMSSW_5_3_20/src/Lambda/LambdaAnalyzer/crab3checkwrite.0.tmp 'srm://dcache07.unl.edu:8443/srm/v2/server?SFN=/mnt/hadoop/user/uscms01/pnfs/unl.edu/data4/cms/store/user/saepark/crab3checkwrite.0.tmp'
+INFO 2015-06-19 08:05:54,591: 	 Please wait...
+INFO 2015-06-19 08:05:55,903: 	 Failed running copy command
+INFO 2015-06-19 08:05:55,903: 	   Stdout:
+    Copying 85 bytes file:///afs/cern.ch/user/s/saepark/MyAnalyzer/CMSSW_5_3_20/src/Lambda/LambdaAnalyzer/crab3checkwrite.0.tmp => srm://dcache07.unl.edu:8443/srm/v2/server?SFN=/mnt/hadoop/user/uscms01/pnfs/unl.edu/data4/cms/store/user/saepark/crab3checkwrite.0.tmp
+    
+INFO 2015-06-19 08:05:55,904: 	   Stderr:
+    gfal-copy error: 2 (No such file or directory) - DESTINATION SRM_PUT_TURL error on the turl request : [SE][PrepareToPut][SRM_INVALID_PATH] Dir structure does not exist.srm://dcache07.unl.edu:8443/srm/v2/server?SFN=/mnt/hadoop/user/uscms01/pnfs/unl.edu/data4/cms/store/user/saepark/crab3checkwrite.0.tmp 
+    
+INFO 2015-06-19 08:05:55,904: 	 Unable to check write permission in /store/user/saepark on site T2_US_Nebraska
+Please try again later or contact the site administrators sending them the 'crab checkwrite' output as printed above.
+INFO 2015-06-19 08:05:56,037: 	 Note: You cannot write to a site if you did not ask permission.
+DEBUG 2015-06-19 08:14:32,896: 	 Executing command: 'checkwrite'
+DEBUG 2015-06-19 08:14:32,896: 	 Found CRAB cache file /afs/cern.ch/user/s/saepark/.crab3
+DEBUG 2015-06-19 08:14:32,936: 	 Checking credentials
+DEBUG 2015-06-19 08:14:32,937: 	 Found proxy file /tmp/x509up_u81540
+DEBUG 2015-06-19 08:14:32,937: 	 Getting proxy life time left
+DEBUG 2015-06-19 08:14:33,649: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -timeleft
+ output : 603939
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-19 08:14:34,162: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -actimeleft
+ output : 603937
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-19 08:14:34,163: 	 Proxy valid for 167:45:39 hours
+DEBUG 2015-06-19 08:14:34,277: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=saepark/CN=773439/CN=Sang Eon Park
+
+ error: WARNING: can't open config file: /build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/tmp/BUILDROOT/779a792f862039a4ebba572299ebbb36/build/dmwmbld/srv/state/dmwmbld/builds/comp_gcc481/w/slc6_amd64_gcc481/external/openssl/1.0.1m-comp/ssl/openssl.cnf
+
+ retcode : 0
+DEBUG 2015-06-19 08:14:34,277: 	 Checking credentials
+DEBUG 2015-06-19 08:14:34,277: 	 Found proxy file /tmp/x509up_u81540
+DEBUG 2015-06-19 08:14:34,277: 	 Getting proxy life time left
+DEBUG 2015-06-19 08:14:34,889: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -timeleft
+ output : 603938
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-19 08:14:35,500: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u81540 -actimeleft
+ output : 603936
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-19 08:14:35,501: 	 Proxy valid for 167:45:38 hours
+DEBUG 2015-06-19 08:14:36,108: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u81540 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2015-06-19 08:14:36,109: 	 Command use: checkwrite
+DEBUG 2015-06-19 08:14:36,109: 	 Options use: ['--site=T3_US_Rice']
+DEBUG 2015-06-19 08:14:36,109: 	 Instance is None
+DEBUG 2015-06-19 08:14:36,109: 	 Server base url is None
+DEBUG 2015-06-19 08:14:36,158: 	 Service initialised ({'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'key': '/tmp/x509up_u81540', 'maxcachereuse': 24.0, 'cachepath': '/tmp/saepark/.wmcore_cache_Jzxhtx/cmsweb.cern.ch', 'inputdata': {}, 'cert': '/tmp/x509up_u81540', 'timeout': 300, 'service_name': 'PhEDEx', 'requests': {'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'key': '/tmp/x509up_u81540', 'req_cache_path': '/tmp/saepark/.wmcore_cache_Jzxhtx/cmsweb.cern.ch/.cache', 'cachepath': '/tmp/saepark/.wmcore_cache_Jzxhtx/cmsweb.cern.ch', 'host': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'cacheduration': 0, 'cert': '/tmp/x509up_u81540', 'accept_type': 'text/html', 'timeout': 300, 'deleteCacheOnExit': <WMCore.Services.Requests.TempDirectory instance at 0x1354368>, 'endpoint_components': ParseResult(scheme='https', netloc='cmsweb.cern.ch', path='/phedex/datasvc/json/prod/', params='', query='', fragment=''), 'logger': <logging.Logger instance at 0x1334a70>, 'content_type': 'application/x-www-form-urlencoded', 'conn': <httplib2.Http object at 0x13561d0>}, 'logger': <logging.Logger instance at 0x1334a70>, 'cacheduration': 0, 'method': None}):
+	 host: cmsweb.cern.ch, basepath: https://cmsweb.cern.ch/phedex/datasvc/json/prod/ (text/html)
+	 cache: /tmp/saepark/.wmcore_cache_Jzxhtx/cmsweb.cern.ch (duration 0 hours, max reuse 24.0 hours)
+INFO 2015-06-19 08:14:36,158: 	 Will check write permission in the default location /store/user/<username>
+INFO 2015-06-19 08:14:36,159: 	 Retrieving DN from proxy...
+INFO 2015-06-19 08:14:37,734: 	 DN is: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=saepark/CN=773439/CN=Sang Eon Park
+INFO 2015-06-19 08:14:37,735: 	 Retrieving username from SiteDB...
+INFO 2015-06-19 08:14:40,240: 	 Username is: saepark
+INFO 2015-06-19 08:14:40,241: 	 Validating LFN /store/user/saepark...
+INFO 2015-06-19 08:14:40,241: 	 LFN /store/user/saepark is valid.
+INFO 2015-06-19 08:14:40,283: 	 Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
+INFO 2015-06-19 08:14:40,284: 	 Will check write permission in /store/user/saepark on site T3_US_Rice
+DEBUG 2015-06-19 08:14:40,295: 	 getData: 
+	url: lfn2pfn
+	data: {'node': ['T3_US_Rice'], 'custodial': 'n', 'lfn': ['/store/user/saepark/crab3checkwrite.0.tmp'], 'protocol': 'srmv2'}
+INFO 2015-06-19 08:14:40,655: 	 Attempting to copy (dummy) file crab3checkwrite.0.tmp to /store/user/saepark on site T3_US_Rice
+INFO 2015-06-19 08:14:40,664: 	 Executing command: env -i X509_USER_PROXY=/tmp/x509up_u81540 gfal-copy -v -t 180 file:///afs/cern.ch/user/s/saepark/MyAnalyzer/CMSSW_5_3_20/src/Lambda/LambdaAnalyzer/crab3checkwrite.0.tmp 'srm://bonner-grid.rice.edu:8443/srm/v2/server?SFN=/data/cms/se/store/user/saepark/crab3checkwrite.0.tmp'
+INFO 2015-06-19 08:14:40,665: 	 Please wait...
+INFO 2015-06-19 08:14:43,009: 	 Failed running copy command
+INFO 2015-06-19 08:14:43,010: 	   Stdout:
+    Copying 85 bytes file:///afs/cern.ch/user/s/saepark/MyAnalyzer/CMSSW_5_3_20/src/Lambda/LambdaAnalyzer/crab3checkwrite.0.tmp => srm://bonner-grid.rice.edu:8443/srm/v2/server?SFN=/data/cms/se/store/user/saepark/crab3checkwrite.0.tmp
+    
+INFO 2015-06-19 08:14:43,010: 	   Stderr:
+    gfal-copy error: 70 (Communication error on send) - DESTINATION SRM_PUT_TURL srm-ifce err: Communication error on send, err: [SE][PrepareToPut][] httpg://bonner-grid.rice.edu:8443/srm/v2/server: CGSI-gSOAP running on lxplus0001.cern.ch reports Error initializing context
+    GSS Major Status: Authentication Failed
+    
+    GSS Minor Status Error Chain:
+    globus_gsi_gssapi: SSLv3 handshake problems
+    OpenSSL Error: s3_clnt.c:1172: in library: SSL routines, function SSL3_GET_SERVER_CERTIFICATE: certificate verify failed
+    globus_gsi_callback_module: Could not verify credential
+    globus_gsi_callback_modul
+    
+INFO 2015-06-19 08:14:43,010: 	 Unable to check write permission in /store/user/saepark on site T3_US_Rice
+Please try again later or contact the site administrators sending them the 'crab checkwrite' output as printed above.
+INFO 2015-06-19 08:14:43,108: 	 Note: You cannot write to a site if you did not ask permission.

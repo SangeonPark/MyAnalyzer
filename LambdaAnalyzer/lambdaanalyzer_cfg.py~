@@ -1,0 +1,42 @@
+import FWCore.ParameterSet.Config as cms
+
+#set up a process
+process = cms.Process("TEST")
+process.load("FWCore.MessageService.MessageLogger_cfi")
+process.MessageLogger.cerr.threshold ='INFO'
+process.MessageLogger.categories.append('TEST')
+process.MessageLogger.cerr.INFO = cms.untracked.PSet(
+        limit = cms.untracked.int32(-1)
+        )
+               
+
+process.MessageLogger.cerr.FwkReport.reportEvery = cms.untracked.int32(5000)
+process.options   = cms.untracked.PSet( wantSummary = 
+cms.untracked.bool(True) )
+
+process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(-1) )
+
+
+#this inputs the input files
+process.source = cms.Source("PoolSource",
+                            fileNames = cms.untracked.vstring(
+'/store/user/davidlw/PAMinBiasUPC/PA2013_FlowCorr_Pr\
+omptReco_MB_Gplus_ReTracking_v18/25c9a89be536a41c8ccb3c75e9fd9358/pPb_HM_1000_1\
+_Miz.root', '/store/user/davidlw/PAMinBiasUPC/PA2013_FlowCorr_PromptReco_MB_Gplus_ReTracking_v18/25c9a89be536a41c8ccb3c75e9fd9358/pPb_HM_1001_1_ahF.root ', '/store/user/davidlw/PAMinBiasUPC/PA2013_FlowCorr_PromptReco_MB_Gplus_ReTracking_v18/25c9a89be536a41c8ccb3c75e9fd9358/pPb_HM_1002_1_mw5.root','/store/user/davidlw/PAMinBiasUPC/PA2013_FlowCorr_PromptReco_MB_Gplus_ReTracking_v18/25c9a89be536a41c8ccb3c75e9fd9358/pPb_HM_1003_1_QW8.root','/store/user/davidlw/PAMinBiasUPC/PA2013_FlowCorr_PromptReco_MB_Gplus_ReTracking_v18/25c9a89be536a41c8ccb3c75e9fd9358/pPb_HM_1004_2_0sy.root','/store/user/davidlw/PAMinBiasUPC/PA2013_FlowCorr_PromptReco_MB_Gplus_ReTracking_v18/25c9a89be536a41c8ccb3c75e9fd9358/pPb_HM_1005_1_9tO.root' 
+                            )
+                                         )
+
+
+process.V0 = cms.EDAnalyzer('LambdaAnalyzer', 
+multMax = cms.untracked.double(10000),
+multMin = cms.untracked.double(1),
+generalV0Candidates = cms.untracked.string('generalV0Candidates')
+                            )
+
+# talk to the output module
+
+process.TFileService = cms.Service("TFileService",
+                                       fileName = 
+cms.string('V0LambdaKshort.root')                                   )
+
+process.p = cms.Path(process.V0)

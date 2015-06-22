@@ -1,0 +1,38 @@
+[?1034hType                                  Module                      Label      Process          Full Name
+-------------------------------------------------------------------------------------------------------
+edm::TriggerResults                   "TriggerResults"            ""         "HLT"            edmTriggerResults_TriggerResults__HLT
+L1GlobalTriggerReadoutRecord          "gtDigis"                   ""         "RECO"           L1GlobalTriggerReadoutRecord_gtDigis__RECO
+edm::SortedCollection<CaloTower,edm::StrictWeakOrdering<CaloTower> >    "towerMaker"                ""         "RECO"           CaloTowersSorted_towerMaker__RECO
+edm::TriggerResults                   "TriggerResults"            ""         "RECO"           edmTriggerResults_TriggerResults__RECO
+edm::ValueMap<reco::DeDxData>         "dedxDiscrimASmi"           ""         "RECO"           recoDeDxDataedmValueMap_dedxDiscrimASmi__RECO
+edm::ValueMap<reco::DeDxData>         "dedxHarmonic2"             ""         "RECO"           recoDeDxDataedmValueMap_dedxHarmonic2__RECO
+edm::ValueMap<reco::DeDxData>         "dedxTruncated40"           ""         "RECO"           recoDeDxDataedmValueMap_dedxTruncated40__RECO
+reco::BeamSpot                        "offlineBeamSpot"           ""         "RECO"           recoBeamSpot_offlineBeamSpot__RECO
+vector<reco::Conversion>              "conversions"               ""         "RECO"           recoConversions_conversions__RECO
+vector<reco::Muon>                    "muons"                     ""         "RECO"           recoMuons_muons__RECO
+vector<reco::PFJet>                   "ak5PFJets"                 ""         "RECO"           recoPFJets_ak5PFJets__RECO
+vector<reco::PFMET>                   "pfMet"                     ""         "RECO"           recoPFMETs_pfMet__RECO
+vector<reco::Photon>                  "photons"                   ""         "RECO"           recoPhotons_photons__RECO
+vector<reco::Track>                   "generalTracks"             ""         "RECO"           recoTracks_generalTracks__RECO
+vector<reco::Vertex>                  "offlinePrimaryVertices"    ""         "RECO"           recoVertexs_offlinePrimaryVertices__RECO
+vector<reco::Vertex>                  "offlinePrimaryVerticesWithBS"   ""         "RECO"           recoVertexs_offlinePrimaryVerticesWithBS__RECO
+vector<reco::VertexCompositeCandidate>    "generalV0Candidates"       "Kshort"   "RECO"           recoVertexCompositeCandidates_generalV0Candidates_Kshort_RECO
+vector<reco::VertexCompositeCandidate>    "generalV0Candidates"       "Lambda"   "RECO"           recoVertexCompositeCandidates_generalV0Candidates_Lambda_RECO
+edm::TriggerResults                   "TriggerResults"            ""         "ANASKIM"        edmTriggerResults_TriggerResults__ANASKIM
+edm::ValueMap<reco::DeDxData>         "dedxDiscrimASmiLowPt"      ""         "ANASKIM"        recoDeDxDataedmValueMap_dedxDiscrimASmiLowPt__ANASKIM
+edm::ValueMap<reco::DeDxData>         "dedxHarmonic2LowPt"        ""         "ANASKIM"        recoDeDxDataedmValueMap_dedxHarmonic2LowPt__ANASKIM
+edm::ValueMap<reco::DeDxData>         "dedxTruncated40LowPt"      ""         "ANASKIM"        recoDeDxDataedmValueMap_dedxTruncated40LowPt__ANASKIM
+reco::Centrality                      "pACentrality"              ""         "ANASKIM"        recoCentrality_pACentrality__ANASKIM
+vector<reco::Track>                   "generalTracksLowPt"        ""         "ANASKIM"        recoTracks_generalTracksLowPt__ANASKIM
+vector<reco::Vertex>                  "offlinePrimaryVerticesLowPt"   ""         "ANASKIM"        recoVertexs_offlinePrimaryVerticesLowPt__ANASKIM
+vector<reco::Vertex>                  "offlinePrimaryVerticesLowPt"   "WithBS"   "ANASKIM"        recoVertexs_offlinePrimaryVerticesLowPt_WithBS_ANASKIM
+vector<reco::VertexCompositeCandidate>    "generalV0CandidatesLowPt"   "D0"       "ANASKIM"        recoVertexCompositeCandidates_generalV0CandidatesLowPt_D0_ANASKIM
+vector<reco::VertexCompositeCandidate>    "generalV0CandidatesNew"    "D0"       "ANASKIM"        recoVertexCompositeCandidates_generalV0CandidatesNew_D0_ANASKIM
+vector<reco::VertexCompositeCandidate>    "generalV0CandidatesLowPt"   "Kshort"   "ANASKIM"        recoVertexCompositeCandidates_generalV0CandidatesLowPt_Kshort_ANASKIM
+vector<reco::VertexCompositeCandidate>    "generalV0CandidatesNew"    "Kshort"   "ANASKIM"        recoVertexCompositeCandidates_generalV0CandidatesNew_Kshort_ANASKIM
+vector<reco::VertexCompositeCandidate>    "generalV0CandidatesLowPt"   "Lambda"   "ANASKIM"        recoVertexCompositeCandidates_generalV0CandidatesLowPt_Lambda_ANASKIM
+vector<reco::VertexCompositeCandidate>    "generalV0CandidatesNew"    "Lambda"   "ANASKIM"        recoVertexCompositeCandidates_generalV0CandidatesNew_Lambda_ANASKIM
+vector<reco::VertexCompositeCandidate>    "generalV0CandidatesLowPt"   "Omega"    "ANASKIM"        recoVertexCompositeCandidates_generalV0CandidatesLowPt_Omega_ANASKIM
+vector<reco::VertexCompositeCandidate>    "generalV0CandidatesNew"    "Omega"    "ANASKIM"        recoVertexCompositeCandidates_generalV0CandidatesNew_Omega_ANASKIM
+vector<reco::VertexCompositeCandidate>    "generalV0CandidatesLowPt"   "Xi"       "ANASKIM"        recoVertexCompositeCandidates_generalV0CandidatesLowPt_Xi_ANASKIM
+vector<reco::VertexCompositeCandidate>    "generalV0CandidatesNew"    "Xi"       "ANASKIM"        recoVertexCompositeCandidates_generalV0CandidatesNew_Xi_ANASKIM
